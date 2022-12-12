@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    cursor: none;	
+}
+.happy{
+    font-family: 'Source Code Pro', monospace;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.dafa{
+    white-space: nowrap;
+    border-right: .15em solid rgb(5, 5, 5);
+    overflow: hidden;
+    animation: 
+    typing .5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+#h{
+    display: block;
+}
+
+#b{
+    display: none;
+}
+#l{
+    display: none;
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(0, 0, 0); }
+}
+canvas {
+    display: block;
+    
+}
+@media only screen and (max-width: 768px) {
+    .happy h1  {
+        font-size: 25px;
+    }  
+}
